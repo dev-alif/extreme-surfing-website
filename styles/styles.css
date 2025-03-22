@@ -10,3 +10,29 @@
 .font-permanent-marker {
     font-family: "Permanent Marker", cursive;
 }
+
+/* colors */
+.font-indigo{
+    color: #5856D6;
+}
+
+.background-indigo{
+    background-color: #5856D6;
+}
+
+.font-dark-gray{
+    color: #3F3F3F;
+}
+
+.font-red{
+    color: red;
+}
+
+/* hero section */
+.hero-section{
+    background-image: url('../assets/home-hero-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}

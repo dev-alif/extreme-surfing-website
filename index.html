@@ -12,6 +12,8 @@
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/23acd5bb39.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +23,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="relative">
         <nav class="w-9/10 lg:w-4/5 mx-auto">
-            <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -34,7 +36,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-rajdhani">
                             <li>
                                 <a>HOME</a>
                                 <ul class="p-2">
@@ -43,50 +45,85 @@
                                     <li><a>SCUBA DIVING</a></li>
                                 </ul>
                             </li>
-                            <li><a>Item 1</a></li>
+                            <li><a>ABOUT US</a></li>
+                            <li><a>SERVICES</a></li>
                             <li>
-                                <a>Parent</a>
+                                <a>PAGES</a>
                                 <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                    <li><a>Subpage 1</a></li>
+                                    <li><a>Subpage 2</a></li>
                                 </ul>
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li>
+                                <a>BLOG</a>
+                                <ul class="p-2">
+                                    <li><a>Post 1</a></li>
+                                    <li><a>Post 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>CONTACT US</a></li>
+                            <li class="max-w-14"><a><img src="assets/navbar-search-icon.png" alt=""></a></li>
                         </ul>
                     </div>
                     <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-                    <img src="assets/company-logo.png" alt="">
+                    <img class="w-49" src="assets/company-logo.png" alt="">
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                <div class="navbar-center hidden lg:flex font-rajdhani">
+                    <ul class="menu menu-horizontal px-1 font-medium text-gray-600">
                         <li>
                             <details>
-                                <summary>HOME</summary>
+                                <summary class="rounded-md hover:text-white hover:bg-indigo-500">HOME</summary>
                                 <ul class="p-2">
-                                    <li><a>EXTREME SURFING</a></li>
-                                    <li><a>KAYAKING</a></li>
-                                    <li><a>SCUBA DIVING</a></li>
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>EXTREME SURFING</a>
+                                    </li>
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>KAYAKING</a></li>
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>SCUBA DIVING</a></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a>Item 1</a></li>
+                        <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>ABOUT US</a></li>
+                        <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>SERVICES</a></li>
                         <li>
                             <details>
-                                <summary>Parent</summary>
+                                <summary class="rounded-md hover:text-white hover:bg-indigo-500">PAGES</summary>
                                 <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>Subpage 1</a></li>
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>Subpage 2</a></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li>
+                            <details>
+                                <summary class="rounded-md hover:text-white hover:bg-indigo-500">BLOG</summary>
+                                <ul class="p-2">
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>Post 1</a></li>
+                                    <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>Post 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="rounded-md hover:text-white hover:bg-indigo-500"><a>CONTACT US</a></li>
+                        <li class="w-14 rounded-md hover:text-white hover:bg-indigo-500"><a><img
+                                    src="assets/navbar-search-icon.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn">+0123456789</a>
+                <div class="navbar-end font-teko">
+                    <a
+                        class="btn p-6 rounded-full border-none shadow-none text-white bg-indigo-500 hover:bg-indigo-600 text-xl"><img class="mr-4"
+                            src="assets/banner-phoneicon.png.png" alt=""> +0123456789</a>
                 </div>
             </div>
         </nav>
+
+        <!-- hero section -->
+        <section class="z-[-5] hero-section text-white flex justify-center items-center py-auto">
+            <div class="text-center font-rajdhani">
+                <h3 class="font-permanent-marker text-3xl">COME HAVE FUN WITH</h3>
+                <h1 class="font-teko text-[8.75rem] font-bold">EXTREME SURFING</h1>
+                <a
+                    class="btn p-6 border-none shadow-none rounded-full text-white bg-indigo-500 hover:bg-indigo-600 text-lg font-bold">GET STARTED <i class="ml-5 fa-solid fa-arrow-right"></i></a>
+            </div>
+            <img class="absolute bottom-0" src="assets/wave-effect-home-hero.png" alt="">
+        </section>
     </header>
 
     <main>
