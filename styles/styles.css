@@ -12,20 +12,32 @@
 }
 
 /* colors */
-.font-indigo{
-    color: #5856D6;
+.section-background{
+    background-color: #F2FAFF;
 }
 
 .background-indigo{
     background-color: #5856D6;
 }
 
+.font-indigo{
+    color: #5856D6;
+}
+
 .font-dark-gray{
     color: #3F3F3F;
 }
 
+.font-gray{
+    color: #646464;
+}
+
 .font-red{
     color: red;
+}
+
+.font-almost-black{
+    color: #151515;
 }
 
 /* hero section */
