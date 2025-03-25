@@ -158,7 +158,7 @@
                 <h3 class="font-indigo font-permanent-marker text-xl">OUR SERVICES</h3>
                 <h2 class="font-teko text-6xl font-bold font-almost-black mt-4 mb-10">WHAT WE OFFER</h2>
                 <div class="grid grid-cols-3 gap-8">
-                    <div class="shadow-lg shadow-indigo-200 bg-white text-center space-y-8 py-12 px-8">
+                    <div class="hover:shadow-lg shadow-indigo-200 bg-white text-center space-y-8 py-12 px-8">
                         <img class="mx-auto" src="assets/kite-surfing-blue-icon.png" alt="">
                         <h3 class="font-teko font-bold font-almost-black text-2xl">KITE SURFING</h3>
                         <p class="font-rajdhani font-medium text-lg font-gray">Rolestiae non recusandae itaque earum
@@ -166,7 +166,7 @@
                         <a class="font-rajdhani font-bold font-indigo" href="#">LEARN MORE <i
                                 class="ml-3 fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <div class="shadow-lg shadow-indigo-200 bg-white text-center space-y-8 py-12 px-8">
+                    <div class="hover:shadow-lg shadow-indigo-200 bg-white text-center space-y-8 py-12 px-8">
                         <img class="mx-auto" src="assets/professional-coach-blue-icon.png" alt="">
                         <h3 class="font-teko font-bold font-almost-black text-2xl">PROFESSIONAL COACH</h3>
                         <p class="font-rajdhani font-medium text-lg font-gray">Rolestiae non recusandae itaque earum
@@ -174,7 +174,7 @@
                         <a class="font-rajdhani font-bold font-indigo" href="#">LEARN MORE <i
                                 class="ml-3 fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <div class="shadow-lg shadow-indigo-200 bg-white text-center space-y-8 py-12 px-8">
+                    <div class="hover:shadow-lg shadow-indigo-200 bg-white text-center space-y-8 py-12 px-8">
                         <img class="mx-auto" src="assets/surf-lessons-blue-icon.png" alt="">
                         <h3 class="font-teko font-bold font-almost-black text-2xl">SURF LESSONS</h3>
                         <p class="font-rajdhani font-medium text-lg font-gray">Rolestiae non recusandae itaque earum
@@ -187,10 +187,67 @@
         </section>
 
         <!-- register now CTA section -->
-        <section class="bg-[#4644AB]">
-            <h3 class="text-white font-permanent-marker text-xl">ABOUT US</h3>
-            <h2 class="font-teko text-white text-6xl font-bold mt-4 mb-3">BOOK YOUR SURFING LESSON
-                NOW!</h2>
+        <section class="relative bg-[#4644AB]">
+            <div class="flex justify-center items-center">
+                <div class="flex-2 text-center">
+                    <div class="w-135 mx-auto">
+                        <h3 class="text-white font-permanent-marker text-xl">ABOUT US</h3>
+                        <h2 class="font-teko text-white text-6xl font-bold mt-4 mb-7">BOOK YOUR SURFING LESSON
+                            NOW!</h2>
+                        <div class="grid grid-cols-2 gap-7">
+                            <input
+                                class="bg-white font-rajdhani font-medium font-gray border-none rounded-full py-4 px-7"
+                                type="text" placeholder="Name">
+                            <input
+                                class="bg-white font-rajdhani font-medium font-gray border-none rounded-full py-4 px-7"
+                                type="text" placeholder="Phone">
+                            <input
+                                class="bg-white font-rajdhani font-medium font-gray border-none rounded-full py-4 px-7"
+                                type="email" placeholder="Email">
+                            <input
+                                class="bg-white font-rajdhani font-medium font-gray border-none rounded-full py-4 px-7"
+                                type="text" placeholder="Select Lesson">
+                            <textarea
+                                class="col-span-2 bg-white font-rajdhani font-medium font-gray border-none rounded-2xl py-4 px-7"
+                                rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="assets/blue-cta-section-image.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- our activities section -->
+        <section class="text-center mt-35">
+            <h3 class="font-indigo font-permanent-marker text-xl">OUR ACTIVITIES</h3>
+            <h2 class="font-teko text-6xl font-bold font-almost-black mt-4 mb-10">EXPLORE THE EXCITEMENT</h2>
+            <!-- carousel -->
+            <div class="carousel w-3/5">
+                <div id="item1" class="carousel-item w-full">
+                    <img src="assets/lacie-slezak-7yqyQQXgOT8-unsplash (1).jpg"
+                        class="w-full" />
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                    <img src="assets/tim-marshall-vn59e-3J2oo-unsplash (1).jpg"
+                        class="w-full" />
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                    <img src="assets/hoang-m-nguyen-w7XkGwfv6fQ-unsplash (1).jpg"
+                        class="w-full" />
+                </div>
+                <div id="item4" class="carousel-item w-full">
+                    <img src="assets/jeremy-bishop-pikyGuAmwpM-unsplash (1).jpg"
+                        class="w-full" />
+                </div>
+            </div>
+            <div class="flex w-full justify-center gap-2 py-2">
+                <a href="#item1" class="btn btn-xs hover:bg-orange-500">1</a>
+                <a href="#item2" class="btn btn-xs">2</a>
+                <a href="#item3" class="btn btn-xs">3</a>
+                <a href="#item4" class="btn btn-xs">4</a>
+            </div>
         </section>
     </main>
 
