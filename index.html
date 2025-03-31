@@ -23,14 +23,15 @@
 </head>
 
 <body>
-    <header class="relative">
-        <nav class="w-9/10 lg:w-4/5 mx-auto">
+    <!-- navbar is outside the header tag because it's sticky and body needs to be the parent  -->
+    <nav class="z-999 sticky top-0 bg-white">
+        <div class="w-9/10 lg:w-4/5 mx-auto">
             <div class="navbar">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
+                                stroke="#625FFF">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
@@ -66,7 +67,7 @@
                         </ul>
                     </div>
                     <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-                    <img class="w-49" src="assets/company-logo.png" alt="">
+                    <img class="w-49 ml-5" src="assets/company-logo.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex font-rajdhani">
                     <ul class="menu menu-horizontal px-1 font-medium text-gray-600">
@@ -108,17 +109,19 @@
                 </div>
                 <div class="navbar-end font-teko">
                     <a
-                        class="btn p-6 rounded-full border-none shadow-none text-white bg-indigo-500 hover:bg-indigo-600 text-xl"><img
-                            class="mr-4" src="assets/banner-phoneicon.png.png" alt=""> +0123456789</a>
+                        class="btn p-5 lg:p-6 rounded-full border-none shadow-none text-white bg-indigo-500 hover:bg-indigo-600 text-xl"><img
+                            class="lg:mr-4" src="assets/banner-phoneicon.png.png" alt=""> <span
+                            class="hidden lg:inline">+0123456789</span></a>
                 </div>
             </div>
-        </nav>
-
+        </div>
+    </nav>
+    <header>
         <!-- hero section -->
-        <section class="z-[-5] hero-section text-white flex justify-center items-center py-auto">
+        <section class="relative z-[-5] hero-section text-white flex justify-center items-center py-auto">
             <div class="text-center font-rajdhani">
-                <h3 class="font-permanent-marker text-3xl">COME HAVE FUN WITH</h3>
-                <h1 class="font-teko text-[8.75rem] font-bold">EXTREME SURFING</h1>
+                <h3 class="font-permanent-marker text-2xl lg:text-3xl">COME HAVE FUN WITH</h3>
+                <h1 class="font-teko text-8xl lg:text-[8.75rem] font-bold mt-6 mb-7">EXTREME SURFING</h1>
                 <a
                     class="btn p-6 border-none shadow-none rounded-full text-white bg-indigo-500 hover:bg-indigo-600 text-lg font-bold">GET
                     STARTED <i class="ml-5 fa-solid fa-arrow-right"></i></a>
@@ -132,10 +135,10 @@
         <section>
             <div class="w-3/5 mx-auto flex justify-center items-top my-35 pb-15">
                 <div class="flex-3 relative">
-                    <img class="absolute left-71 top-32" src="assets/home-about-image1.jpg.png" alt="">
-                    <img class="absolute top-2 left-2" src="assets/home-about-image2.jpg.png" alt="">
-                    <img class="absolute top-70 left-18" src="assets/home-about-image3.jpg.png" alt="">
-                    <img class="absolute left-68" src="assets/home-about-image4.jpg.png" alt="">
+                    <img class="absolute left-71 top-32 w-[50%]" src="assets/home-about-image1.jpg.png" alt="">
+                    <img class="absolute top-2 left-2 w-[37%]" src="assets/home-about-image2.jpg.png" alt="">
+                    <img class="absolute top-70 left-18 w-[30%]" src="assets/home-about-image3.jpg.png" alt="">
+                    <img class="absolute left-68 w-[20%]" src="assets/home-about-image4.jpg.png" alt="">
                 </div>
                 <div class="flex-2">
                     <h3 class="font-indigo font-permanent-marker text-xl">ABOUT US</h3>
@@ -224,29 +227,25 @@
             <h3 class="font-indigo font-permanent-marker text-xl">OUR ACTIVITIES</h3>
             <h2 class="font-teko text-6xl font-bold font-almost-black mt-4 mb-10">EXPLORE THE EXCITEMENT</h2>
             <!-- carousel -->
-            <div class="carousel w-3/5">
+            <div class="carousel w-4/7">
                 <div id="item1" class="carousel-item w-full">
-                    <img src="assets/lacie-slezak-7yqyQQXgOT8-unsplash (1).jpg"
-                        class="w-full" />
+                    <img src="assets/lacie-slezak-7yqyQQXgOT8-unsplash (1).jpg" class="w-full rounded-2xl" />
                 </div>
                 <div id="item2" class="carousel-item w-full">
-                    <img src="assets/tim-marshall-vn59e-3J2oo-unsplash (1).jpg"
-                        class="w-full" />
+                    <img src="assets/tim-marshall-vn59e-3J2oo-unsplash (1).jpg" class="w-full rounded-2xl" />
                 </div>
                 <div id="item3" class="carousel-item w-full">
-                    <img src="assets/hoang-m-nguyen-w7XkGwfv6fQ-unsplash (1).jpg"
-                        class="w-full" />
+                    <img src="assets/hoang-m-nguyen-w7XkGwfv6fQ-unsplash (1).jpg" class="w-full rounded-2xl" />
                 </div>
                 <div id="item4" class="carousel-item w-full">
-                    <img src="assets/jeremy-bishop-pikyGuAmwpM-unsplash (1).jpg"
-                        class="w-full" />
+                    <img src="assets/jeremy-bishop-pikyGuAmwpM-unsplash (1).jpg" class="w-full rounded-2xl" />
                 </div>
             </div>
-            <div class="flex w-full justify-center gap-2 py-2">
-                <a href="#item1" class="btn btn-xs hover:bg-orange-500">1</a>
-                <a href="#item2" class="btn btn-xs">2</a>
-                <a href="#item3" class="btn btn-xs">3</a>
-                <a href="#item4" class="btn btn-xs">4</a>
+            <div class="flex w-full justify-center gap-2 font-rajdhani py-2 mt-10">
+                <a href="#item1" class="btn btn-xs text-white bg-gray-500 hover:bg-indigo-500 rounded-full">1</a>
+                <a href="#item2" class="btn btn-xs text-white bg-gray-500 hover:bg-indigo-500 rounded-full">2</a>
+                <a href="#item3" class="btn btn-xs text-white bg-gray-500 hover:bg-indigo-500 rounded-full">3</a>
+                <a href="#item4" class="btn btn-xs text-white bg-gray-500 hover:bg-indigo-500 rounded-full">4</a>
             </div>
         </section>
     </main>
